@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Tone from 'tone';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export const Blog2 = () => {
   const piano = new Tone.Sampler({
