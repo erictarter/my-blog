@@ -1,7 +1,17 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import gsap from 'gsap';
 
 export const Blog1 = () => {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 475) {
+      gsap.to('.carousel-container', { opacity: 0, duration: 1 });
+    }
+    if (window.scrollY < 475) {
+      gsap.to('.carousel-container', { opacity: 1, duration: 1 });
+    }
+  });
+
   return (
     <div>
       <div className='long-line'></div>

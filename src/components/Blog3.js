@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import gsap from 'gsap';
 
 export const Blog3 = () => {
   const centerClick = e => {
