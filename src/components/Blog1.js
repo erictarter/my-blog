@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import gsap from 'gsap';
+import { TweenMax } from 'gsap';
 
 export const Blog1 = () => {
   window.addEventListener('scroll', () => {
     if (window.scrollY > 475) {
-      gsap.to('.carousel-container', { opacity: 0, duration: 1 });
+      TweenMax.to('.carousel-container', { opacity: 0, duration: 1 });
     }
     if (window.scrollY < 475) {
-      gsap.to('.carousel-container', { opacity: 1, duration: 1 });
+      TweenMax.to('.carousel-container', { opacity: 1, duration: 1 });
     }
   });
 
@@ -53,7 +53,7 @@ export const Blog1 = () => {
         <div className='para'>
           Creating a sports betting application has been a goal of mine since I
           started programming. I had an idea of how this project would look
-          before I started, However many changes were made in the middle of
+          before I started, however many changes were made in the middle of
           coding. Those adjustments were needed as I realized the variety of
           bets there are in sports betting. I learned alot making this project.
           I am happy with it for now.
@@ -772,7 +772,7 @@ function removeInp() {
             </div>
           </div>
           Heres a few expamples in the app of how the math works out in a
-          parlay. lets say we bet $10 on three bets against on the <b>spread</b>
+          parlay. Lets say we bet $10 on three bets against on the <b>spread</b>
           . Each bet for or against the <b>spread</b> is essentially a 50/50
           bet. that gives each of these games a value of 2
           <br />
