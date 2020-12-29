@@ -530,9 +530,9 @@ min='1' max='500' value={betsSelected.value}
           The first screen on the betslip will ask what kind of bet you want.
           There are two options, straight or parlay. Straight is simply betting
           a specific amount on each game/event. A parlay is betting one amount
-          for all the games/events. The payout is higher for parlay but all of
-          the bets have to be correct to win. In other words "bet a little, win
-          a lot". I will explain exactly how it works in the next part.
+          for several games. The payout is higher for parlay but all of the bets
+          have to be correct to win. In other words "bet a little, win a lot". I
+          will explain exactly how it works in the next part.
         </div>
         <div className='para'>
           In the betslip, there are four things to do here. <br />
@@ -708,18 +708,18 @@ function cancelBet(time) {
             </div>
           </div>
           <div className='para'>
-            When the "place bets button" is clicked, several conditional
-            statements be met to proceed. This function checks if the user is
-            logged in. It checks if the <b>betsSelected.length</b> is greater
-            then 0. Also checks the <b>amount</b> of each <b>betSelect</b>{' '}
-            object is greater then 0. Lastly it checks if the user has
-            sufficient funds to place the wager. All of these conditionals must
-            be true to proceed. When it proceeds, the page switches to a
-            confirmation screen. Confirming the bet moves the bet information
-            into the <b>open bets</b> container. That data gets added to local
-            storage. Then the <b>betsSelected</b> list gets set back to empty
-            list so the user gets a fresh betslip. If the user clicks cancel,
-            the same function that clears the betslip runs.
+            When the "place bets button" is clicked, several conditionals must
+            be met to proceed. This function checks if the user is logged in. It
+            checks if the <b>betsSelected.length</b> is greater then 0. Also
+            checks the <b>amount</b> of each <b>betSelect</b> object is greater
+            then 0. Lastly it checks if the user has sufficient funds to place
+            the wager. All of these conditionals must be true to proceed. When
+            it proceeds, the page switches to a confirmation screen. Confirming
+            the bet moves the bet information into the <b>open bets</b>{' '}
+            container. That data gets added to local storage. Then the{' '}
+            <b>betsSelected</b> list gets set back to empty list so the user
+            gets a fresh betslip. If the user clicks cancel, the same function
+            that clears the betslip runs.
           </div>
           <div className='section-title' id='link-3'>
             Mid-projects Changes
@@ -1076,12 +1076,12 @@ message('username and password do not match');
           <code>{`localStorage.setItem('open bets', JSON.stringify(openBetStorage));`}</code>
         </div>
         <div className='para'>
-          Everytime the app mounts, the program check if the item{' '}
+          Everytime the app mounts, the program checks if the item{' '}
           <b>open bets</b> exists in local storage. If it does, then we have
           that data in the <b>openBetStorage</b> list. Since the{' '}
           <b>open bets</b> item is a <b>JSON</b> string, it gets parsed back to
-          a <b>Javascript</b> Object. Here is a code snippet showing that and an
-          image of what this <b>JSON</b> looks like.
+          a <b>Javascript</b> Object. Here is a code snippet showing what this{' '}
+          looks like.
         </div>
         <div className='sample-code'>
           <code>{`
