@@ -49,14 +49,14 @@ export const Blog1 = () => {
         </div>
         <div className='blog-title'>Building a Sports Betting App </div>
         <div className='date'>November 21, 2020</div>
+        <div className='read-time'> Read Time 10 minutes</div>
         <div className='short-line'></div>
         <div className='para'>
-          Creating a sports betting application has been a goal of mine since I
-          started programming. I had an idea of how this project would look
-          before I started, however many changes were made in the middle of
-          coding. Those adjustments were needed as I realized the variety of
-          bets there are in sports betting. I learned alot making this project.
-          I am happy with it for now.
+          Creating a sports betting application has been a goal of mine. I had
+          an idea of how this project would look before I started, but some
+          things had to change. Those adjustments were needed as I realized the
+          variety of bets there are in sports betting. I learned a ton when
+          making this project. I am happy with it for now.
         </div>
         <div className='para'>
           <span className='lg-text'>
@@ -122,9 +122,9 @@ export const Blog1 = () => {
         <div className='para'>
           When you load the app, you see a Nav bar, main container, and a sticky
           footer. On the left side of the nav, there is a hamburger menu icon.
-          Clicking that triggers the first important animation. Actually two
-          animations are happening at the same time when it is clicked. First,
-          it shrinks the main-container and pushes it over 50% of the container
+          Clicking that triggers the first important animation. Rather two
+          animations are happening at the same time when clicked. First, it
+          shrinks the main-container and pushes it over 50% of the container
           width.
           <br />
           <div className='sample-code'>
@@ -144,10 +144,10 @@ export const Blog1 = () => {
           </div>
           In the second part of this, there is side menu container that pops
           out. It displays other sports you can filter through. When the menu
-          icon is clicked, this selector gets a class added (through JS event).
-          This sets the display property from{' '}
+          icon gets clicked, this selector gets a class added (through JS
+          event). This sets the display property from{' '}
           <span className='orange'>none</span> to{' '}
-          <span className='orange'>block</span> and triggers the <b>pop in </b>
+          <span className='orange'>block</span> and triggers the <b>pop in </b>{' '}
           animation. The <b>pop in</b> animation moves the side menu from -50%
           margin-left (completely off the viewport) to 0% margin-left. This
           takes up half of the screen.
@@ -164,8 +164,8 @@ export const Blog1 = () => {
 
 `}</code>
           </div>
-          There are <b>pop out</b> and <b>grow</b> animations that are executed
-          when the side menu is exited. <b>pop out</b> and 'grow' do the exact
+          There are <b>pop out</b> and <b>grow</b> animations that execute when
+          the side menu exits. <b>pop out</b> and <b>grow</b> do the exact
           opposite as
           <b> pop in</b> and <b>shrink</b>. This brings the page back to the
           original layout. It is triggered by either clicking the x icon or the
@@ -199,22 +199,22 @@ export const Blog1 = () => {
 
 `}</code>
           </div>
-          On smaller viewports (600px or less), these animations are slightly
-          altered. The main container get push out completely, and the side menu
-          covers the entire width.
+          On smaller viewports (600px or less), these animations alter. The main
+          container gets pushed out completely, and the side menu covers the
+          entire width.
         </div>
         <div className='para'>
-          Lets move to the main container layout. The main is the parent to each
-          event category (football, basketball, ect..). Each event is contained
-          in a div with a <span className='blue'>display</span> of
+          Let's move to the main container layout. The main is the parent to
+          each event category (football, basketball, ect..). Each event
+          contained in a div with a <span className='blue'>display</span> of
           <span className='orange'> flex</span> and a{' '}
           <span className='blue'>flex-direction </span> of{' '}
           <span className='orange'>column</span>. Within the flex container are
           three more divs with a <span className='blue'>display</span> of{' '}
           <span className='orange'>grid </span>. Each of these three divs{' '}
-          <span className='blue'>grid-template-columns</span> are set to{' '}
-          <span className='orange'>repeat(4, 1fr)</span>, which evenly spaces
-          out four grid items to each take up 1/4 of the column.
+          <span className='blue'>grid-template-columns</span> set to{' '}
+          <span className='orange'>repeat(4, 1fr)</span>. This spaces out four
+          grid items to each take up 1/4 of the column.
           <div className='gr-3'>
             <div className='sample-code'>
               <code>{`
@@ -243,11 +243,11 @@ export const Blog1 = () => {
             </div>
             <div className='img-ss'></div>
           </div>
-          All of this game data is brought in by a Fetch Request. By using the
-          map(high order array method), we loop through the data. The data is
-          formated in JSON as a list of objects. Then that data is added to the
-          HTML dynamically. Here's what it looks like in the JS file. With just
-          this one function, all of the games are added to the page.
+          All this game data brought in by a Fetch Request. By using the
+          map(high order array method), we loop through the data. This data gets
+          formated in JSON as a list of objects. Then that data gets added to
+          the HTML dynamically. Here's what it looks like in the JS file. With
+          one function, all the games get added to the page.
           <div className='sample-code'>
             <code>{`
 fetchTeamSportData('nfl', nflContainer);
@@ -406,18 +406,19 @@ document.getElementById(no-matches-{sport}).style.display = 'none';
           </div>
           At the bottom of the screen, there is a sticky footer with a{' '}
           <b>home </b>
-          button, a <b>betslip</b> button, and a <b>open bets</b> button. The
-          betslip button triggers another keyframes animation. Similar to the
-          othe side menu animation, This makes betslip container slide in from
-          the right side. The betslip container holds all the bets that are
+          button, a <b>bet slip</b> button, and an <b>open bets</b> button. The
+          bet slip button triggers another keyframes animation. Similar to the
+          other side menu animation, This makes the bet slip container slide in
+          from the right side. The bet slip container holds all bets that are
           selected, but yet to be finalized. The open bets button has the same
-          animation as the betslip button. The open bets container holds all the
-          bets that are finalized. Both container use a grid layout for the
+          animation as the bet slip button. The open bets container holds all
+          the bets that are finalized. Both containers use a grid layout for the
           games. <span className='blue'>grid-template-columns</span>{' '}
-          <span className='orange'>repeat(2, 1fr)</span> for the betslip and{' '}
+          <span className='orange'>repeat(2, 1fr)</span> for the bet slip.{' '}
           <span className='blue'>grid-template-columns</span>{' '}
           <span className='orange'>repeat(4, 1fr)</span> for the open bets
           container.
+          <br />
           <br />
           That's all the detail I'll go into for the CSS/Animations part of this
           project.
@@ -426,21 +427,21 @@ document.getElementById(no-matches-{sport}).style.display = 'none';
           Betting/Events Functionality
         </div>
         <div className='para'>
-          Lets move into some Java Script now. When a bet button is clicked
-          (number under <b>money, spread, total</b>), that bet is added to the
-          betslip container. Between that and what happens in the betslip
+          Let's move into some Java Script now. When a bet button gets clicked
+          (number under <b>money, spread, total</b>), it gets added to the bet
+          slip container. Between that and what happens in the bet slip
           container, is where most of the functions are.
         </div>
         <div className='para'>
-          A couple things happen when a bet button is clicked. Inside the
-          function, a <b>local</b> variable is created. I called this variable
+          A few things happen when a bet button gets clicked. Inside the
+          function, a <b>local</b> variable gets created. I called this variable
           <b> betSelect</b>. <b>betSelect</b> is an object with 10 properties
-          that will provide all of the information we need for a single bet. The
+          that will provide all the information we need for a single bet. The
           <b> betSelect</b> object gets pushed to a <b>global</b> list called
-          <b>betsSelected</b>. Some values of the <b>betSelect</b> object are
-          taken and added to the <b>innerHTML</b> of the betslip container. Also
-          a number appears at that footer where the betslip button is. This
-          number shows how many bets are in the betslip.
+          <b>betsSelected</b>. Some values of the <b>betSelect</b> object get
+          taken and added to the <b>innerHTML</b> of the bet slip container.
+          Also a number appears at that footer where the bet slip button is.
+          This number shows how many bets are in the bet slip.
           <div className='sample-code'>
             <code>{`let betSelect = {`}</code>
             <br />
@@ -526,32 +527,32 @@ min='1' max='500' value={betsSelected.value}
           <div className='full-img-ss'></div>
         </div>
         <div className='para'>
-          Now that there is a bet or a few in the betslip, lets look in there.
-          The first screen on the betslip will ask what kind of bet you want.
+          Now that there is a bet or a few in the bet slip, let's look in there.
+          The first screen on the bet slip will ask what kind of bet you want.
           There are two options, straight or parlay. Straight is simply betting
           a specific amount on each game/event. A parlay is betting one amount
-          for several games. The payout is higher for parlay but all of the bets
-          have to be correct to win. In other words "bet a little, win a lot". I
-          will explain exactly how it works in the next part.
+          for several games. The payout is higher for parlay. All the bets have
+          to be correct to win. In other words "bet a little, win a lot". I will
+          explain how it works in the next part.
         </div>
         <div className='para'>
-          In the betslip, there are four things to do here. <br />
-          1. Bet amount inputs can be changed. <br />
-          2. An individual game can be removed from the betslip. <br />
-          3. The whole bets slip can be cleared. <br />
+          In the bet slip, there are four things to do here. <br />
+          1. Input amounts can get changed. <br />
+          2. An individual game can get removed from the bet slip. <br />
+          3. The whole bet slip can get cleared. <br />
           4. Place the bet.
         </div>
         <div className='para'>
-          Remember the betSelect object? Well there is an <b>amount</b> value
-          that gets changed to the value of the input. The input change triggers
-          two more functions. One updates the{' '}
-          <span className='blue'>innerHTML</span> of the bet cost. This is done
-          by looping through the <b>betsSelected</b> list, adding all the amount
-          values up. Then setting the <span className='blue'>innerText</span> to
-          that number. The second function does a similar thing, but updates the
-          winnings <span className='blue'>innerText</span> instead. However the
-          winnings are calculated by the <b>amount</b> value and the odds of
-          each bet.
+          Remember the betSelect object? There is an <b>amount</b> value that
+          gets changed to the value of the input. The input change triggers two
+          more functions. One updates the{' '}
+          <span className='blue'>innerHTML</span> of the bet cost. This gets
+          done by looping through the <b>betsSelected</b> list, adding all the
+          amount values up. Then setting the{' '}
+          <span className='blue'>innerText</span> to that number. The second
+          function does something similar. It updates the winnings{' '}
+          <span className='blue'>innerText</span> instead. However, the winnings
+          get calculated by the <b>amount</b> value and the odds of each bet.
           <div className='sample-code'>
             <code>{`
             function updateWinnings() {            
@@ -600,10 +601,10 @@ min='1' max='500' value={betsSelected.value}
             </code>
           </div>
           <div className='para'>
-            Next to each game bet, there is minus "-" icon. Clicking that will
-            remove that specific event from the betslip. This is done by using a{' '}
-            <b>for each</b> loop through the container. If the id of the{' '}
-            <b>child node</b> matches the argument passed in, the element is
+            Next to each game bet, there is a minus "-" icon. Clicking that will
+            remove that specific event from the bet slip. It gets done by using
+            a <b>for each</b> loop through the container. If the id of the{' '}
+            <b>child node</b> matches the argument passed in, the element gets
             removed.
             <div className='sample-code'>
               <code>{`
@@ -637,15 +638,15 @@ min='1' max='500' value={betsSelected.value}
             </div>
           </div>
           <div className='para'>
-            Clearing the betslip is very simple. Clicking the clear bets button
+            Clearing the bet slip is very simple. Clicking the clear bets button
             sets the <b>matchDetailsContainer</b>{' '}
             <span className='blue'>innerHTML</span> to an empty string. Visually
-            this clears the betslip. The <b>betsSelected</b> <b>global</b>{' '}
+            this clears the bet slip. The <b>betsSelected</b> <b>global</b>{' '}
             variable needs to be set back to an empty array. Since{' '}
             <b>betsSelected</b> is a global variable, We can access it within
-            the scope of the function called. The amount and winnings needs to
-            be set to $0.00. Also the number showing the amount of bets (betslip
-            button in the footer), needs to be set to 0 and dissapear.
+            the scope of the function called. The amount and winnings need to be
+            set to $0.00. Also, the number showing the amount of bets (bet slip
+            button in the footer), needs to be set to 0 and disappear.
             <div className='sample-code'>
               <code>{`
               clearBetsBtn.addEventListener
@@ -708,28 +709,28 @@ function cancelBet(time) {
             </div>
           </div>
           <div className='para'>
-            When the "place bets button" is clicked, several conditionals must
-            be met to proceed. This function checks if the user is logged in. It
-            checks if the <b>betsSelected.length</b> is greater then 0. Also
+            When the "place bets button" gets clicked, several conditionals must
+            get met to proceed. This function checks if the user gets logged in.
+            It checks if the <b>betsSelected.length</b> is greater than 0. Also
             checks the <b>amount</b> of each <b>betSelect</b> object is greater
-            then 0. Lastly it checks if the user has sufficient funds to place
-            the wager. All of these conditionals must be true to proceed. When
-            it proceeds, the page switches to a confirmation screen. Confirming
-            the bet moves the bet information into the <b>open bets</b>{' '}
-            container. That data gets added to local storage. Then the{' '}
-            <b>betsSelected</b> list gets set back to empty list so the user
-            gets a fresh betslip. If the user clicks cancel, the same function
-            that clears the betslip runs.
+            than 0. Lastly, it checks if the user has enough funds to place the
+            wager. All these conditionals must be true to proceed. When it
+            proceeds, the page switches to a confirmation screen. Confirming the
+            bet moves the bet information into the <b>open bets</b> container.
+            That data gets added to local storage. Then the <b>betsSelected</b>{' '}
+            list gets set back to an empty list so the user gets a fresh bet
+            slip. If the user clicks Cancel, the same function that clears the
+            bet slip runs.
           </div>
           <div className='section-title' id='link-3'>
             Mid-projects Changes
           </div>
           <div className='para'>
-            Had to make changes to the functionality if the user chooses to make
-            a parlay bet. I did not realize this until I did some research on
-            parlaying. The individual game bets do not need inputs attached to
-            them. Instead there should just be one input for all the games in a
-            parlay. first step... remove all the game inputs
+            I Had to make changes to the functionality if the user chooses to
+            make a parlay bet. I did not realize this until I did some research
+            on parlaying. The individual game bets do not need inputs attached
+            to them. Instead, there should be one input for all the games in a
+            parlay. The first step... remove all the game inputs
             <div className='sample-code'>
               <code>{`
 function removeInp() {
@@ -771,10 +772,10 @@ function removeInp() {
                                                 `}</code>
             </div>
           </div>
-          Heres a few expamples in the app of how the math works out in a
-          parlay. Lets say we bet $10 on three bets against on the <b>spread</b>
-          . Each bet for or against the <b>spread</b> is essentially a 50/50
-          bet. that gives each of these games a value of 2
+          Here are a few examples in the app of how the math works out in a
+          parlay. Let's say we bet $10 on three bets against on the{' '}
+          <b>spread</b>. Each bet for or against the <b>spread</b> is basically
+          a 50/50 bet. That gives each of these games a value of 2.
           <br />
           <b>bet amount</b> = $10
           <br />
@@ -784,8 +785,8 @@ function removeInp() {
         </div>
         <div className='full-img-ss-1'></div>
         <div className='para'>
-          Betting on the moneyline is a little more complicated. Lets do another
-          wager with an amount of $10 on three games on the moneyline.
+          Betting on the Moneyline is a little more complicated. Let's do
+          another wager with an amount of $10 on three games on the Moneyline.
           <br />
           <b>game1(-120 favorite)</b> = 220{' '}
           <i className='fas fa-divide grey'></i> 120 = 1.83333
@@ -801,9 +802,9 @@ function removeInp() {
           <b>payout</b> = amount(10) x multiplyer(8.5415) = $85.42(rounded from
           85.415)
           <br />
-          Here's a code snippet showing how the math is done. It checks if the
-          type of bet is a <b>moneyline</b> bet. If it isn't the{' '}
-          <b>multiplyer</b> gets multiplied by 2.
+          Here's a code snippet showing how the math gets done. It checks if the
+          type of bet is a <b>Moneyline</b> bet. If it isn't the{' '}
+          <b>Multiplier</b> gets multiplied by 2.
           <div className='sample-code'>
             <code>{`
             document.getElementById ('parlay-amount') .addEventListener('change', e => {
@@ -933,28 +934,28 @@ multiplyer += 2;
           Forms/Local Storage
         </div>
         <div className='para'>
-          The login and sign up form are hidden until you click the login word
-          or icon at the top right of the nav. They are a <b>pop up</b> style of
-          form. <span className='blue'>Position</span> is set to{' '}
+          The login and sign-up form are hidden until you click the login word
+          or icon at the top right of the nav. They are a <b>pop-up</b> style of
+          form. The <span className='blue'>Position</span> is set to{' '}
           <span className='orange'>fixed</span>.{' '}
           <span className='blue'>Width</span> is{' '}
           <span className='orange'>50vw</span> and{' '}
           <span className='blue'>margin-left</span> is set to{' '}
-          <span className='orange'>25%</span> which centers the form nicely.
-          Initially, the <span className='blue'>display</span> is{' '}
+          <span className='orange'>25%</span> which centers the form. Initially,
+          the <span className='blue'>display</span> is{' '}
           <span className='orange'>none</span> until the form is clicked and set
           to <span className='orange'>block</span>. Also when the form pops up,
           you see the background get darker. This <b>overlay</b> prevents other
-          things from being clicked, also lets the form stand out more.
+          things from getting clicked. Also, lets the form stand out more.
         </div>
         <div className='para'>
-          Upon submitting the sign up form, a few things are required to create
-          the account. The the username must be a certain length, and the
-          password must <b>match</b> a <b>regular expression</b>. When the
-          submission is successful, the username and password are saved in local
-          storage. Since this app does not have any <b>backend</b>, local
-          storage is how the user data is saved. Also the user is given an
-          amount of money between $1-$500.
+          Upon submitting the sign-up form, a few things are required to create
+          the account. The username must be a certain length, and the password
+          must <b>match</b> a <b>regular expression</b>. When the submission is
+          successful, the username and password get saved in local storage.
+          Since this app does not have any <b>backend</b>, local storage is how
+          the user data gets saved. Also, the user gets given an amount of money
+          between $1-$500.
           <div className='sample-code'>
             <code>{`
             const passw = /^(?=.*\d)(?=.*[a-z]) (?=.*[A-Z]).{6,20}$/;
@@ -1022,9 +1023,9 @@ multiplyer += 2;
           After some time passes or the page refreshes, the user gets logged
           out. To log back in, we compare the login form input to local storage
           items. In the code snippet below, the <b>loginFunc</b> function logs
-          in the user. The user information(username and funds) are displayed in
-          the right corner of the screen. Importantly, being logged in allows
-          the user to place bets.
+          in the user. The user information(username and funds) gets displayed
+          in the right corner of the screen. When logged in, it allows the user
+          to place bets.
         </div>
         <div className='sample-code'>
           <code>{`
@@ -1063,20 +1064,20 @@ message('username and password do not match');
         </div>
         <div className='para'>
           Local storage serves another purpose in this app. I mentioned this
-          previously, It stores the <b>open bets </b>. This happens when we
-          confirm the wager. We have a new list storing objects called{' '}
+          before, it stores the <b>open bets </b>. This happens when we confirm
+          the wager. We have a new list storing objects called{' '}
           <b>openBetStorage</b>. This takes the same objects as the
           <b> betsSelected</b> list. The difference is that{' '}
-          <b>openBetStorage</b> doesn't reset to an empty list. When its added
+          <b>openBetStorage</b> doesn't reset to an empty list. When it's added
           to local storage, it must be "stringified". This is because{' '}
-          <b>Javascript</b> objects must be converted to <b>JSON </b>
+          <b>Javascript</b> objects must get converted to <b>JSON </b>
           strings in local storage.
         </div>
         <div className='sample-code'>
           <code>{`localStorage.setItem('open bets', JSON.stringify(openBetStorage));`}</code>
         </div>
         <div className='para'>
-          Everytime the app mounts, the program checks if the item{' '}
+          Every time the app mounts, the program checks if the item{' '}
           <b>open bets</b> exists in local storage. If it does, then we have
           that data in the <b>openBetStorage</b> list. Since the{' '}
           <b>open bets</b> item is a <b>JSON</b> string, it gets parsed back to

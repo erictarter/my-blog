@@ -52,6 +52,7 @@ export const Blog3 = () => {
         </div>
         <div className='blog-title'>Some Simple Tips & Tools </div>
         <div className='date'>November 27, 2020</div>
+        <div className='read-time'>Read Time 2 minutes</div>
         <div className='short-line'></div>
         <div className='para'>
           {/* Here are a few tips when using Grid and Flex. Also briefly some
@@ -94,13 +95,13 @@ export const Blog3 = () => {
           with <b>internal links</b>. This web page uses smooth scrolling. A
           common method to incorporate smooth scrolling involves using
           <b> Jquery</b>. That way works fine but is more work. It involves
-          importing the <b>Jquery</b> plug in. Setting the <b>Jquery</b> class.
+          importing the <b>Jquery</b> plug-in. Setting the <b>Jquery</b> class.
           Writing functions in <b>Javascript</b> for that class. Then putting
           those classes into the <b>HTML</b> links. It's fine, but{' '}
           <b>react-scroll</b> is very simple.
         </div>
         <div className='para'>
-          First install <b>react-scroll</b>. Go in your terminal and run this
+          First, install <b>react-scroll</b>. Go to your terminal and run this
           command.
         </div>
         <div className='sample-code'>{`
@@ -154,7 +155,7 @@ export const Blog3 = () => {
         </div>
         <div className='para'>
           Set the <span className='blue'>to</span> <b>property</b> to the{' '}
-          <b>ID</b> of the element you want to link to. Thats all it takes to
+          <b>ID</b> of the element you want to link to. That's all it takes to
           implement smooth scrolling in react.
         </div>
         <div className='section-title' id='tip-link-2'>
@@ -162,7 +163,7 @@ export const Blog3 = () => {
         </div>
         <div className='para'>1. Centering Items</div>
         <div className='para'>
-          Something as simple as centering an item can be frusterating. I know a
+          Something as simple as centering an item can be frustrating. I know a
           few easy ways to do it. Here is how to do it if the parent element{' '}
           <span className='blue'>display</span> <b>property</b> is set to{' '}
           <span className='orange'>grid</span>
@@ -173,11 +174,11 @@ export const Blog3 = () => {
         <div className='sample-code'>{`place-items: center;`}</div>
         <div className='para'>
           Here is an example of how it works. I made a 3D cube. The cubes parent
-          element is contained with the salmon colored border. The parent
+          element is contained with the salmon-colored border. The parent
           element <b>class</b> is called <span className='orange'>.square</span>
           . The cube element <b>class</b> is called{' '}
           <span className='orange'>.cube</span>. Below will display the{' '}
-          <b>CSS</b>, then the cube before{' '}
+          <b>CSS</b>, then the cube before the{' '}
           <span className='blue'>place-items</span> property is set.
         </div>
         <div className='sample-code'>
@@ -222,12 +223,12 @@ export const Blog3 = () => {
         </div>
         <div className='full-img-ss-6'></div>
         <div className='para'>
-          Lets look at <b>flex</b>. By default,{' '}
+          Let's look at <b>flex</b>. By default, the{' '}
           <span className='blue'>flex-direction</span> <b>property</b> is set to{' '}
-          <span className='orange'>row</span>. To center flex items in row takes
-          setting two <b>properties</b>.{' '}
+          <span className='orange'>row</span>. To center flex items in a row
+          takes setting two <b>properties</b>.{' '}
           <span className='blue'>align-items</span> and{' '}
-          <span className='blue'>justify-content</span> both set to{' '}
+          <span className='blue'>justify-content</span> are both set to{' '}
           <span className='orange'>center</span>.{' '}
           <span className='blue'>Align-items</span> centers the items
           vertically. <span className='blue'>Justify-content</span> centers the
